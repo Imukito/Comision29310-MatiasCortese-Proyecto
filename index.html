@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--CSS-->
-    <link rel="stylesheet" href="style.css">
     <!--Titulo de la pagina-->
     <title>Tito</title>
     <!--Favicon-->
     <link rel="shortcut icon" href="Multimedia/Logo/Logo.cuadrado.png" type="image/x-icon">
+    <!--BOOtSTRAP-->
+    <link rel="stylesheet" href="./CSS/bootstrap.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="./CSS/style.css">
     <!--Animaciones-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
@@ -57,13 +59,27 @@
         <section>
             <img src="Multimedia/Vectores/Slider.temporal.Unicef.3.jpg" alt="Logo Unicef" id="mensaje-temporal-index" class="mensaje-temporal">
 
-            <div class="carrousel-container">
-                <img src="Multimedia/Imágenes/3.jpg" alt="Hombre sentado en un muelle observando un lago montañoso" class="carrousel">
-                
-                <img src="Multimedia/Imágenes/4.jpg" alt="Hombre caminando en medio de un bosque de pinos" class="carrousel">
-                
-                <img src="Multimedia/Imágenes/5.jpg" alt="Un ave observando mano extendida con alimento" class="carrousel">
-            </div>
+            <div id="carouselExampleFade" class="carousel slide carousel-fade carrousel-container" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./Multimedia/Imágenes/3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./Multimedia/Imágenes/4.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./Multimedia/Imágenes/5.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </section>    
         <!--Fin imagen temporal y slider carrousel-->
 
@@ -171,6 +187,7 @@
 
     <!--Scripts-->
     <script src="https://kit.fontawesome.com/ed5e6c2c2d.js" crossorigin="anonymous"></script>
+    <script src="./JS/bootstrap.js"></script>
     <!--Fin scripts-->
 </body>
 </html>
