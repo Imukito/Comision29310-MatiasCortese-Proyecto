@@ -94,6 +94,14 @@ html {
         color: #ffffff;
     }
 
+    .boton:active {
+        background-color: #F39288;
+    }
+
+    #boton:active {
+        background-color: #F39288;
+    }
+
     /*Media Queries Header*/
         @media only screen and (max-width:1200px) {
             .logo-header {
@@ -252,6 +260,49 @@ html {
             margin: 4rem 15% 4rem 15%;
         }
 
+        #circle {
+            position: absolute;
+            margin-left: 88vw;
+            width: 10vw;
+            height: 10vw;
+            background-color: #9a91db;
+            font-family:'Dongle', sans-serif;
+            text-align: center;
+            line-height: 12vw;
+            font-size: 4.5vw;
+            font-weight: bold;
+            color: #EFEFEF;
+            animation-name: circle;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+            animation-direction: alternate;
+            animation-timing-function: ease-in;
+        }
+
+        @keyframes circle {
+            0% {
+                border-radius: 0%;
+            }
+
+            25% {
+                border-radius: 25%;
+            }
+
+            50% {
+                border-radius: 50%;
+            }
+
+            75% {
+                border-radius: 75%;
+            }
+
+            100% {
+                border-radius: 100%;
+                transform: translateY(2565px); 
+            }
+        }
+
         .producto-1 {
             grid-area: producto-1;
             display: flex;
@@ -325,6 +376,12 @@ html {
             font-weight: bold;
             color: #ffffff;
             cursor: pointer;
+        }
+
+        .animate__pulse {
+            animation-name: slogan;
+            animation-delay: 2s;
+            animation-iteration-count:infinite;
         }
 
         .boton-comprar:hover{
