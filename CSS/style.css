@@ -17,9 +17,7 @@ html {
 
 /*Header*/
     .header-container {
-        width: 100%;
         background-color: #EFEFEF;
-        display: flex;
         justify-content: center;
         align-items: center;
     }
@@ -46,8 +44,6 @@ html {
     }
 
     .menu-navegable {
-        display: flex;
-        justify-content: center;
         font-family: 'Dongle', sans-serif;
         font-weight: bold;
         font-display: #788AAA;
@@ -81,70 +77,6 @@ html {
     .boton:active {
         background-color: #F39288;
     }
-
-    /*Media Queries Header*/
-        @media only screen and (max-width:1024px) {
-            .boton {
-                border: .18rem solid;
-                font-size: 1.5rem;
-            }
-        }
-
-        @media only screen and (min-width:769px) and (max-width:978px) {
-            .logo-slogan-container {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-            #logo-header {
-                width: 9rem;
-            }
-
-            #slogan-header {
-                width: 7rem;
-            }
-
-            .logo-header {
-                width: 15rem
-            }
-
-            .boton {
-                font-size: 1.3rem;
-                margin: .3rem;
-            }
-        }
-
-        @media only screen and (max-width:768px) { 
-            .container-fluid {
-                flex-direction: column;
-                justify-content: center;
-            }
-        }
-
-        @media only screen and (max-width:575px) {
-            .container-fluid {
-                flex-direction: row;
-                justify-content: center;
-            }
-    
-            .logo-header {
-                width: 60vw;
-            }
-
-            #logo-header {
-                width: 45vw;
-            }
-
-            #slogan-header {
-                display: none;
-            }
-
-            .navbar-toggler {
-                border: .15rem solid #788AAA;
-            }
-        }
-    /*Fin media Queries Header*/
 /*Fin header*/
 
 /*index.html*/
@@ -353,7 +285,7 @@ html {
             border-radius: .9rem;
             margin-top: 1.7rem;
             padding: .1rem .9rem;
-            font-family: 'Dongle';
+            font-family: 'Dongle', sans-serif;
             font-size: 2.5rem;
             font-weight: bold;
             color: #ffffff;
@@ -458,7 +390,7 @@ html {
             display: flex;
             margin: 3.5rem 0 3.5rem 0;
             justify-content: center;
-            font-family: 'Dongle';
+            font-family: 'Dongle', sans-serif;
             font-size: 1.8rem;
         }
 
@@ -484,7 +416,7 @@ html {
         .buscador-barra {
             width: 46%;
             height: 1.6rem;
-            font-family: 'Dongle';
+            font-family: 'Dongle', sans-serif;
             font-size: 1.5rem;
             text-align: start
         }
@@ -737,7 +669,7 @@ html {
 
         #boton-enviar {
             padding: 0rem 1.5rem;
-            font-family: 'Dongle';
+            font-family: 'Dongle', sans-serif;
             font-size: 1.5rem;
             font-weight: bold;
         }
@@ -747,7 +679,7 @@ html {
 /*Footer*/
     .footer-container {
         background-color: #EFEFEF;
-        font-family: 'Dongle';
+        font-family: 'Dongle', sans-serif;
         padding: 1.5rem 12rem 2rem 12rem;
         display: grid;
         grid-template-columns: 1fr .7fr .5fr .5fr;
@@ -809,6 +741,75 @@ html {
        
     }
     
+    /*Media Queries*/
+    /*Queries Header*/
+    @media only screen and (max-width:1024px) {
+        .boton {
+            border: .18rem solid;
+            font-size: 1.5rem;
+        }
+    }
+
+    @media only screen and (min-width:769px) and (max-width:978px) {
+        .logo-slogan-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #logo-header {
+            width: 9rem;
+        }
+
+        #slogan-header {
+            width: 7rem;
+        }
+
+        .logo-header {
+            width: 15rem
+        }
+
+        .boton {
+            font-size: 1.3rem;
+            margin: .3rem;
+        }
+    }
+
+    @media only screen and (max-width:768px) { 
+        .container-fluid {
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    @media only screen and (max-width:575px) {
+        .container-fluid {
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .logo-header {
+            width: 60vw;
+        }
+
+        #logo-header {
+            width: 45vw;
+        }
+
+        #slogan-header {
+            display: none;
+        }
+
+        .navbar-toggler {
+            border: .15rem solid #788AAA;
+        }
+    }
+    /*Fin Queries Header*/
+
+
+
+
+
     /*Media Queries Footer*/
         @media only screen and (max-width:1200px) {
             .footer-container {
