@@ -9,38 +9,40 @@
     <title>Soporte</title>
     <!--Favicon-->
     <link rel="shortcut icon" href="Multimedia/Logo/Logo.cuadrado.png" type="image/x-icon">
+    <!--BOOtSTRAP-->
+    <link rel="stylesheet" href="./CSS/bootstrap.css">
     <!--CSS-->
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 
 <body>
     <!--Header-->
-    <header class="header-container">
-        <!--Logo-->  
-        <a href="./index.html">
-            <img src="Multimedia/Logo/Logo.rectangular.3.png" alt="Tito logo" class="logo-header">
-        </a>
-        <!--Fin logo--> 
-        
-        <!--Zona navegable-->
-        <nav class="menu-navegable-container">
-            <ul class="menu-navegable">
-                <li>
-                    <a href="./tienda.html" class="boton">Tienda</a>
-                </li>
-                <li>
-                    <a href="./soporte.html" class="boton">Soporte</a>
-                </li>
-                <li>
-                    <a href="./nosotros.html" class="boton">Nosotros</a>
-                </li>
-                <li>
-                    <a href="./contacto.html" class="boton">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-        <!--Fin zona navegable-->
-    </header>
+    <nav class="navbar navbar-expand-sm header-container">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <img class="logo-header" src="./Multimedia/Logo/Logo.rectangular.3.png" alt="Tito logo">  
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse menu-navegable-container" id="collapsibleNavbar">
+                <ul class="navbar-nav menu-navegable">
+                    <li class="nav-item">
+                        <a class="nav-link boton" href="./tienda.html">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link boton" href="./soporte.html">Soporte</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link boton" href="./nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link boton" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <!--Fin header-->
 
     <main>
@@ -184,7 +186,7 @@
     <!--Fin footer-->
 
     <!--Scripts-->
-
+    <script src="./JS/bootstrap.js"></script>
     <!--Fin Scripts-->
 </body>
 </html>
