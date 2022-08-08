@@ -89,11 +89,15 @@ html {
 
     /*Seccion 1*/
         .seccion-1-container {
-
             display: flex;
-            margin: 2rem 15% 2rem 15%;
+            margin: 2vw 15% 2vw 15%;
             justify-content: center;
         }    
+
+        .imghome1 {
+            width: 45%;
+            height: 100%;
+        }
 
         .seccion-1 {
             margin: 0 0 0 1rem;
@@ -101,17 +105,20 @@ html {
         }
 
         .titulo-home {
-            font-size: 3rem;
+            font-size: 3vw;
             color: #414141;
-            margin-bottom: 1rem;
+            margin-bottom: 1vw;
         }
 
         .txt-home {
-            font-size: 1.6rem;
+            font-size: 1.5vw;
             text-align: justify;
             margin-bottom: 1rem;
         }
 
+        .imghome2 {
+            width: 25vw;
+        }
     /*Fin seccion 1*/
 
     /*Videos*/
@@ -120,43 +127,6 @@ html {
             justify-content: center;
         }
     /*Fin videos*/
-
-    /*Media Queries Index*/
-    @media only screen and (max-width:1200px) {
-      
-    
-    }
-
-    @media only screen and (max-width:1000px) {
-        .seccion-1-container {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .titulo-home {
-            font-size: 2.3rem;
-            margin-top: 1.3rem;
-            text-align: start;
-        }
-
-        .seccion-1 {
-            margin: 0 0 0 0;
-        }
-
-        .txt-home {
-            font-size: 1.4rem;
-        }
-
-        .imghome2 {
-            width: 100%;
-        }
-    }
-
-    @media only screen and (max-width:425px) {
-    
-    }
-
-    /*Fin Media Queries index*/
 /*Fin index.html*/
 
 /*Tienda.html*/
@@ -806,6 +776,36 @@ html {
     }
     /*Fin Queries Header*/
 
+    /*Queries Index*/
+    @media only screen and (max-width:768px) {
+        .seccion-1-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .imghome1 {
+            width: 100%;
+        }
+
+        .titulo-home {
+            font-size: 6vw;
+            margin-top: 3vw;
+            text-align: start;
+        }
+
+        .seccion-1 {
+            margin: 0 0 0 0;
+        }
+
+        .txt-home {
+            font-size: 3vw;
+        }
+
+        .imghome2 {
+            width: 100%;
+        }
+    }
+    /*Fin Queries index*/
 
 
 
