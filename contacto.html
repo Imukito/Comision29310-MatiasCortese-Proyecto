@@ -92,28 +92,36 @@
         <h2 class="formulario-titulo">Formulario de contacto</h2>
         <section class="formulario-container">
             <form action="enviar.php" method="post" enctype="text/plain" class="formulario">
-                <div class="-formulario-inputs">
-                    <label for="Nombre">Nombre:</label>
-                    <input type="text" name="Nombre" id="Nombre"><br>
+                <div class="mb-3">
+                    <label for="Nombre" class="form-label">Nombre</label>
+                    <input type="text" name="Nombre" class="form-control" id="exampleInputEmail1 Nombre" aria-describedby="Nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="Email" class="form-label">Email</label>
+                    <input type="email" name="Email" class="form-control" id="exampleInputEmail1 Email" aria-describedby="Email">
+                    <div id="emailHelp" class="form-text">Nunca revelaremos esta informacion con nadie.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="Telefono" class="form-label">Telefono</label>
+                    <input type="number" name="Telefono" class="form-control" id="exampleInputPassword1 Telefono">
+                </div>
+                <div>
+                    <label for="comment">Comments:</label>
+                    <textarea class="form-control" rows="5" id="comment Comentarios" name="text"></textarea>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary" id="boton-enviar">Enviar</button>
+              </form>
+                        
+                <!-- <div class="-formulario-inputs">
+                     <label for="Comentarios">Comentario:</label> <br>
+                     <textarea name="Comentarios" id="Comentarios" cols="30" rows="5" placeholder="Escribe tu comentario"></textarea>
                 </div>
 
-                <div class="-formulario-inputs">
-                    <label for="Email">Email:</label>
-                    <input type="email" name="Email" required id="Email"><br>
-                </div>
-                
-                <div class="-formulario-inputs">
-                    <label for="Telefono">Telefono:</label>
-                    <input type="number" name="Telefono" id="Telefono"><br>
-                </div>
-
-                <div class="-formulario-inputs">
-                    <label for="Comentarios">Comentario:</label> <br>
-                    <textarea name="Comentarios" id="Comentarios" cols="30" rows="5" placeholder="Escribe tu comentario"></textarea>
-                </div>
-
-                <input type="submit" value="Enviar" id="boton-enviar">
-            </form>
+                <input type="submit" value="Enviar" id="boton-enviar"> -->
         </section>
     </main>
 
@@ -144,7 +152,7 @@
         <section class="menu-footer">
             <h3 class="titulos-footer">Menú de navegación</h3>
                 <nav>
-                    <ul class="links-footer">
+                    <ul class="links-footer-container">
                         <li><a href="Index.html" class="links-footer">Home</a></li>
                         <li><a href="Tienda.html" class="links-footer">Tienda</a></li>
                         <li><a href="Nosotros.html" class="links-footer">Nosotros</a></li>
