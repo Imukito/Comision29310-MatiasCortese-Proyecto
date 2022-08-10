@@ -455,18 +455,28 @@ html {
         }
 
         .formulario {
-            width: 40vw;
+            transform: translate(22%, 0);
         }
         
         #formulario-input-container {
             font-size: 1.5vw;
-            margin-bottom: 1vw;
-            resize: none;
+            margin-bottom: 1.5vw;
+        }
+
+        .form-label {
+            margin-bottom: .5vw;
         }
 
         .form-control {
             width: 40vw;
             height: 2.2vw;
+            font-size: 1.5vw;
+            padding: 0.375vw 0.75vw;
+        }
+
+        #comment {
+            height: 7vw;
+            resize: none;
         }
 
         #boton-enviar {
@@ -476,6 +486,14 @@ html {
             font-family: 'Dongle', sans-serif;
             font-size: 2vw;
             font-weight: bold;
+        }
+
+        #boton-enviar:hover {
+            background-color: #788AAA;
+        }
+    
+        #boton-enviar:active {
+            background-color: #000000;
         }
     /*Fin formulario.html*/
 /*Fin Contacto.html*/
