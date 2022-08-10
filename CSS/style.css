@@ -23,6 +23,7 @@ html {
         background-color: #EFEFEF;
         justify-content: center;
         align-items: center;
+        padding: 1.5vw;
     }
 
     .logo-header {
@@ -84,9 +85,17 @@ html {
 
 /*index.html*/
     /*Imagen temporal y slider carrousel*/
-        .mensaje-temporal {
+        .mensaje-temporal-container {
             width: 100%;
-            border-bottom: 3px solid #788AAA;
+            background-color: #D6D4D4;
+            border-bottom: .2vw solid #788AAA;
+            display: flex;
+            justify-content: center;
+            padding: 1vw;
+        }
+
+        .mensaje-temporal {
+            height: 2.8vw;
         }
     /*Fin imagen temporal y slider carrousel*/
 
