@@ -402,52 +402,58 @@ html {
 /*Fin Nosotros.html*/
 
 /*Contacto.html*/
-    .contacto-titulo {
-        font-family: 'Bellefair', serif;
-        font-size: 3vw;
-        color: #414141;
-        margin: 2vw 15% 1.5vw 15%;
-    }
-    .contacto-container {
-        font-family: 'Bellefair', serif;
-        font-size: 1.2vw;
-        text-align: justify;
-        margin: 0 15% 2vw 15%;
-    }
+    /*Contacto*/
+        .contacto-titulo {
+            font-family: 'Bellefair', serif;
+            font-size: 3vw;
+            color: #414141;
+            margin: 2vw 15% 1.5vw 15%;
+        }
+        .contacto-container {
+            font-family: 'Bellefair', serif;
+            font-size: 1.2vw;
+            text-align: justify;
+            margin: 0 15% 2vw 15%;
+        }
 
-    .contacto-mapa {
-        width: 100%;
-        height: 15vw;
-        margin-bottom: 1.5vw;
-    }
+        .contacto-mapa {
+            width: 100%;
+            height: 25vw;
+            margin-bottom: 1.5vw;
+        }
 
-    .info-redes {
-        display: flex;
-        margin: 0 18% 0 18%;
-        justify-content: space-between;
-    }
+        .parrafo-contacto {
+            font-size: 2vw;
+        }
 
-    #contacto {
-        display: flex;
-        font-size: 1.8vw;
-        margin-bottom: 1.5vw;
-        align-items: center;
-    }
 
-    #contacto-icono {
-        width: 3vw;
-    }
+        .info-redes {
+            display: flex;
+            margin: 0 18% 0 18%;
+            justify-content: space-between;
+        }
 
-    #contacto-info {
-        font-family: 'Dongle', sans-serif;
-        margin: 0 0 0 0;
-        padding-left: 1.3vw;
-    }
+        #contacto {
+            display: flex;
+            font-size: 1.8vw;
+            margin-bottom: 1.5vw;
+            align-items: center;
+        }
 
-    #redes-icono {
-        width: 3vw;
-        margin-left: 2vw;
-    }
+        #contacto-icono {
+            width: 3vw;
+        }
+
+        #contacto-info {
+            font-family: 'Dongle', sans-serif;
+            margin: 0 0 0 0;
+            padding-left: 1.3vw;
+        }
+
+        #redes-icono {
+            width: 3vw;
+            margin-left: 2vw;
+        }
 
     /*Formulario.html*/ 
         .formulario-container {
@@ -464,7 +470,6 @@ html {
         }
 
         .formulario {
-            transform: translate(22%, 0);
         }
         
         #formulario-input-container {
@@ -837,28 +842,114 @@ html {
 
     /*Queries contacto*/
     @media only screen and (max-width:768px) {
+        .contacto-titulo {
+            font-size: 6vw;
+            margin: 2vw 7% 1.5vw 7%;
+        }
 
+        .contacto-container {
+            margin: 0 7% 2vw 7%;  
+        }
 
+        .parrafo-contacto {
+            font-size: 2.5vw;
+        }
 
+        #contacto-icono {
+            width: 5vw;
+        }
 
+        #contacto-info {
+            font-size: 3vw;
+        }
 
+        #redes-icono {
+            width: 5vw;
+        }
 
+        .formulario-container {
+            margin: 1vw 7% 2vw 7% ;
+        }
 
+        .formulario-titulo {
+            font-size: 5vw;
+            margin-top: 2vw;
+        }
 
+        #formulario-input-container {
+            font-size: 2.5vw;
+        }
 
-
-        
+        .form-control {
+            width: 50vw;
+            height: 3vw;
+            font-size: 2vw;
+            padding: 0.375vw 0.75vw;
+        }
     }
 
+    @media only screen and (max-width:425px) { 
+        .contacto-titulo {
+            font-size: 8vw;
+            margin: 3vw 5% 1.8vw 5%;
+        }
 
+        .contacto-container {
+            margin: 0 5% 2vw 5%;  
+        }
 
+        .parrafo-contacto {
+            font-size: 3.5vw;
+        }
 
+        .info-redes {
+            margin: 0 8% 0 8%;
+            justify-content: space-between;
+        }
 
+        #contacto-icono {
+            width: 7vw;
+        }
+
+        #contacto-info {
+            font-size: 5vw;
+        }
+
+        #redes-icono {
+            width: 7vw;
+        }
+
+        .formulario-container {
+            margin: 1vw 5% 2vw 5% ;
+        }
+
+        .formulario-titulo {
+            font-size: 7vw;
+            margin-top: 3vw;
+        }
+
+        #formulario-input-container {
+            font-size: 3.5vw;
+        }
+
+        .form-control {
+            width: 50vw;
+            height: 5vw;
+            font-size: 3vw;
+            padding: 0.375vw 0.75vw;
+        }
+
+        #boton-enviar {
+            background-color:#9a91db;
+            border: none;
+            padding: 1vw 2vw;
+            font-family: 'Dongle', sans-serif;
+            font-size: 4vw;
+            font-weight: bold;
+        }
+    }
 
     /*Fin Queries nosotros*/
-
-
-
 
     /*Queries Footer*/
         @media only screen and (max-width:768px) {
