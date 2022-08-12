@@ -370,6 +370,7 @@ html {
         .answer {
             font-size: 1vw;
             text-align: justify;
+            margin-bottom: 0;
         }
     /*Fin preguntas frecuentes*/
 /*Fin soporte.html*/
@@ -398,6 +399,7 @@ html {
     .nosotros-texto {
         width: 40VW;
         margin-left: 2.5VW;
+        margin-bottom: 0;
     }
 /*Fin Nosotros.html*/
 
@@ -690,7 +692,7 @@ html {
             }
     
             .seccion-1-container {
-                margin: 2rem 1rem 2rem 1rem;
+                margin: 1rem 1rem 1rem 1rem;
             }
 
             .txt-home {
@@ -751,7 +753,7 @@ html {
         @media screen and (max-width:425px) {
             .productos-grid-container {
                 row-gap: 1.8rem;
-                margin: 2rem 1rem 2rem 1rem;
+                margin: 1rem 1rem 1.5rem 1rem;
             }
 
             .titulo-producto {
@@ -805,23 +807,38 @@ html {
             }
 
             .soporte-productos-img {
-                width: 10vw;
+                width: 13vw;
             }
     
-            .soporte-titulo {
-                font-size: 4vw;
-            }
+            .buscador-barra {
+                width: 60%;
+                height: 5.4vw;
+                font-size: 4.5vw;}
 
-            .faq-titulo {
+            .soporte-titulo {
                 font-size: 6vw;
             }
 
+            .faq-container {
+                margin: 1rem 1rem 1rem 1rem;
+            }
+
+            .faq-grupo {
+                width: 100%;
+                row-gap: .9rem;
+            }
+
+            .faq-titulo {
+                font-size: 1.5rem;
+                margin: 1rem 0 1rem 0;
+            }
+
             .question {
-                font-size: 4vw;
+                font-size: 1.3rem;
             }
 
             .answer {
-                font-size: 2.5vw;
+                font-size: 1rem;
             }
         }
     /*Fin Queries Soporte*/
@@ -847,6 +864,21 @@ html {
                 width: 100%;
                 margin-left: 0;
                 font-size: 3vw;
+            }
+        }
+
+        @media only screen and (max-width:425px) {
+            .nosotros-titulo {
+                font-size: 1.5rem;
+                margin: 1rem 1rem .5rem 1rem;
+            }
+
+            .nosotros-container {
+                margin: 0 1rem 1rem 1rem;
+            }
+
+            .nosotros-texto {
+                font-size: 1rem;
             }
         }
     /*Fin Queries nosotros*/
@@ -901,16 +933,16 @@ html {
 
     @media only screen and (max-width:425px) { 
         .contacto-titulo {
-            font-size: 8vw;
-            margin: 3vw 5% 1.8vw 5%;
+            font-size: 1.5rem;
+            margin: 1rem 1rem .5rem 1rem;
         }
 
         .contacto-container {
-            margin: 0 5% 2vw 5%;  
+            margin: 0 1rem 1rem 1rem;  
         }
 
         .parrafo-contacto {
-            font-size: 3.5vw;
+            font-size: 1rem;
         }
 
         .info-redes {
@@ -931,7 +963,7 @@ html {
         }
 
         .formulario-container {
-            margin: 1vw 5% 2vw 5% ;
+            margin: 0 1rem 1rem 1rem ;
         }
 
         .formulario-titulo {
