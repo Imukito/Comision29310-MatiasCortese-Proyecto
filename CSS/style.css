@@ -799,6 +799,7 @@ html {
             .soporte-productos-container {
                 flex-direction: column;
                 align-items: center;
+                margin: 1rem 0 1rem 0;
             }
 
             .soporte-productos {
@@ -807,16 +808,16 @@ html {
             }
 
             .soporte-productos-img {
-                width: 13vw;
+                width: 22vw;
             }
     
             .buscador-barra {
-                width: 60%;
-                height: 5.4vw;
-                font-size: 4.5vw;}
+                width: 70%;
+                height: 6.4vw;
+                font-size: 6.5vw;}
 
             .soporte-titulo {
-                font-size: 6vw;
+                font-size: 9vw;
             }
 
             .faq-container {
