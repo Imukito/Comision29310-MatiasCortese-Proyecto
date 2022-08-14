@@ -1,0 +1,1096 @@
+/*CSS RESET*/
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+h3{
+    margin-bottom: 0;
+    }
+
+html {
+    font-size: 20px
+}
+
+/*Google fonts*/
+    @import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Dongle:wght@300;400;700&family=Roboto+Mono:wght@200&display=swap');
+    /*font-family: 'Bellefair', serif;
+    font-family: 'Dongle', sans-serif;
+    font-family: 'Roboto Mono', monospace;*/
+
+/*Header*/
+    .header-container {
+        background-color: #EFEFEF;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5vw;
+    }
+
+    .logo-header {
+        width: 16rem;
+        margin-right: 1rem;
+        filter: drop-shadow(.5rem .5rem .5rem #b5b7bb)
+    }
+
+    #logo-header {
+        width: 11rem;
+    }
+
+    #slogan-header {
+        width: 9rem;
+        margin: 0 1.2rem 0 -1.2rem ;
+        filter: drop-shadow(.5rem .5rem .5rem #b9c2d1)
+    }
+
+    .animate__bounce {
+        animation-delay: 2s;
+        animation-iteration-count:infinite;
+    }
+
+    .menu-navegable {
+        font-family: 'Dongle', sans-serif;
+        font-weight: bold;
+        font-display: #788AAA;
+        list-style-type: none;
+    }
+    
+    .boton {
+        margin: .6rem;
+        padding: 1px 10px;
+        border: .2rem solid #788AAA;
+        border-radius: 1.3rem;
+        box-shadow: .5rem .5rem .5rem #b9c2d1;
+        background-color: #ffffff;
+        font-size: 1.7rem;
+        text-decoration: none;
+        text-align: center;
+        color: #788AAA;
+        letter-spacing: .05rem;
+        cursor: pointer;
+    }
+
+    #boton {
+        font-size: 1.9rem;
+    }
+
+    .boton:hover {
+        background-color: #788AAA;
+        color: #ffffff;
+    }
+
+    .boton:active {
+        background-color: #F39288;
+    }
+/*Fin header*/
+
+/*index.html*/
+    /*Imagen temporal y slider carrousel*/
+        .mensaje-temporal-container {
+            width: 100%;
+            background-color: #D6D4D4;
+            border-bottom: .2vw solid #788AAA;
+            display: flex;
+            justify-content: center;
+            padding: 1vw;
+        }
+
+        .mensaje-temporal {
+            height: 2.8vw;
+        }
+    /*Fin imagen temporal y slider carrousel*/
+
+    /*Seccion 1*/
+        .seccion-1-container {
+            display: flex;
+            margin: 2vw 15% 2vw 15%;
+            justify-content: center;
+        }    
+
+        .imghome1 {
+            width: 45%;
+            height: 100%;
+        }
+
+        .seccion-1 {
+            margin: 0 0 0 1rem;
+            font-family: 'Bellefair', serif;
+        }
+
+        .titulo-home {
+            font-size: 3vw;
+            color: #414141;
+            margin-bottom: 1vw;
+        }
+
+        .txt-home {
+            font-size: 1.5vw;
+            text-align: justify;
+            margin-bottom: 1rem;
+        }
+
+        .imghome2 {
+            width: 25vw;
+        }
+    /*Fin seccion 1*/
+
+    /*Videos*/
+        .vidhome {
+            width: 100%;
+            justify-content: center;
+        }
+    /*Fin videos*/
+/*Fin index.html*/
+
+/*Tienda.html*/
+    /*Productos*/
+        .productos-grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas: 
+            'producto-1 producto-2'
+            'producto-3 producto-4'
+            'producto-5 producto-6';
+            row-gap: 3vw;
+            column-gap: 3vw;
+            margin: 3.1vw 13% 3.1vw 13%;
+        }
+
+        #circle {
+            position: absolute;
+            margin-left: 90vw;
+            width: 8vw;
+            height: 8vw;
+            background-color: #9a91db;
+            font-family:'Dongle', sans-serif;
+            text-align: center;
+            line-height: 12vw;
+            font-size: 4.5vw;
+            font-weight: bold;
+            color: #EFEFEF;
+            animation-name: circle;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+            animation-direction:normal;
+            animation-timing-function: ease-in;
+        }
+
+        @keyframes circle {
+            0% {
+                border-radius: 0%;
+            }
+
+            25% {
+                border-radius: 25%;
+            }
+
+            50% {
+                border-radius: 50%;
+            }
+
+            75% {
+                border-radius: 75%;
+            }
+
+            100% {
+                border-radius: 100%;
+                transform: translateY(2565px); 
+            }
+        }
+
+        .producto-1 {
+            grid-area: producto-1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .producto-2 {
+            grid-area: producto-2;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .producto-3 {
+            grid-area: producto-3;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .producto-4 {
+            grid-area: producto-4;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .producto-5 {
+            grid-area: producto-5;
+            display: flex;
+            flex-direction: column;
+        }   
+
+        .producto-6 {
+            grid-area: producto-6;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .titulo-producto {
+            font-family: 'Bellefair', serif;
+            font-size: 2.5vw;
+            color: #414141;
+            margin: 0 0 1rem 0;
+            text-align: start;
+        }
+
+        .productos-elementos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .imagenes-productos {
+            width: 35vw;
+        }
+
+        .descripcion-productos {
+            font-family: 'Bellefair', serif;
+            font-size: 1.5vw;
+            text-align: justify;
+            margin: 1vw 0 0 0;
+        }
+
+        .boton-comprar {
+            width: 10vw;
+            background-color: #F39288;
+            border: none;
+            border-radius: .9rem;
+            margin-top: 1.7vw;
+            padding: .1rem .9rem;
+            font-family: 'Dongle', sans-serif;
+            font-size: 3vw;
+            font-weight: bold;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        .animate__pulse {
+            animation-name: slogan;
+            animation-delay: 2s;
+            animation-iteration-count:infinite;
+        }
+
+        .boton-comprar:hover{
+            background-color: #9a91db;
+        }
+
+        .boton-comprar:active{
+            background-color: #788AAA;
+        }
+    /*Fin productos*/
+/*Fin tienda.html*/
+
+/*Soporte.html*/
+    /*Banner*/
+        .soporte-banner {
+            width: 100%;
+        }
+    /*Fin banner*/
+    
+    /*Soporte productos*/
+        .soporte-productos-container {
+            display: flex;
+            margin: 4vw 0 4vw 0;
+            justify-content: center;
+        }
+
+        .soporte-productos {
+            width: 13vw;
+            text-align: center;
+        }
+
+        .soporte-productos-img {
+            width: 7vw;
+        }
+
+        .soporte-titulo {
+            font-family: 'Dongle', sans-serif;
+            font-size: 3vw;
+        }
+    /*Fin soporte productos*/
+
+    /*Buscador*/
+        .buscador-container {
+            display: flex;
+            border-top: .21vw solid #788AAA;
+            border-bottom: .21vw solid #788AAA;
+            padding: 4vw 0rem 4vw 0rem;
+            justify-content: center;
+        }
+
+        .buscador-barra {
+            width: 46%;
+            height: 2.4vw;
+            font-family: 'Dongle', sans-serif;
+            font-size: 2vw;
+            text-align: start;
+        }
+    /*Fin buscador*/
+
+    /*Preguntas frecuentes*/
+        .faq-titulo {
+            font-family: 'Bellefair', serif;
+            font-size: 2.5vw;
+            color: #414141;
+            margin: 3vw 0 2.5vw 0;
+            text-align: center;
+        }
+    
+        .faq-container {
+            display: flex;
+            justify-content: center;
+            font-family: 'Bellefair', serif;
+        }
+
+        .faq-grupo {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            margin: 0rem 0rem 3vw 0rem;
+            row-gap: 2vw;
+            column-gap: 3vw;
+            width: 60%;
+        }
+
+        .question {
+            font-size: 1.6vw;
+            margin-bottom: .5rem;
+        }
+
+        .answer {
+            font-size: 1vw;
+            text-align: justify;
+            margin-bottom: 0;
+        }
+    /*Fin preguntas frecuentes*/
+/*Fin soporte.html*/
+
+/*Nosotros.html*/
+    .nosotros-titulo {
+        font-family: 'Bellefair', serif;
+        font-size: 3VW;
+        color: #414141;
+        margin: 2VW 10% 1.5VW 10%;
+    }
+
+    .nosotros-container {
+        font-family: 'Bellefair', serif;
+        font-size: 1.6VW;
+        text-align: justify;
+        display: flex;
+        margin: 0 10% 2VW 10%;
+    }
+
+    .nosotros-img {
+        width: 40VW;
+        height: 100%;
+    }
+
+    .nosotros-texto {
+        width: 40VW;
+        margin-left: 2.5VW;
+        margin-bottom: 0;
+    }
+/*Fin Nosotros.html*/
+
+/*Contacto.html*/
+    /*Contacto*/
+        .contacto-titulo {
+            font-family: 'Bellefair', serif;
+            font-size: 3vw;
+            color: #414141;
+            margin: 2vw 15% 1.5vw 15%;
+        }
+        .contacto-container {
+            font-family: 'Bellefair', serif;
+            font-size: 1.2vw;
+            text-align: justify;
+            margin: 0 15% 2vw 15%;
+        }
+
+        .contacto-mapa {
+            width: 100%;
+            height: 25vw;
+            margin-bottom: 1.5vw;
+        }
+
+        .parrafo-contacto {
+            font-size: 2vw;
+        }
+
+
+        .info-redes {
+            display: flex;
+            margin: 0 18% 0 18%;
+            justify-content: space-between;
+        }
+
+        #contacto {
+            display: flex;
+            font-size: 1.8vw;
+            margin-bottom: 1.5vw;
+            align-items: center;
+        }
+
+        #contacto-icono {
+            width: 3vw;
+        }
+
+        #contacto-info {
+            font-family: 'Dongle', sans-serif;
+            margin: 0 0 0 0;
+            padding-left: 1.3vw;
+        }
+
+        #redes-icono {
+            width: 3vw;
+            margin-left: 2vw;
+        }
+
+    /*Formulario.html*/ 
+        .formulario-container {
+            background-color:#F39288;
+            font-family: 'Bellefair', serif;
+            margin: 1vw 15% 2vw 15% ;
+            padding: 1.5vw 0 1.8vw 0;
+        }
+
+        .formulario-titulo {
+            font-family: 'Bellefair', serif;
+            font-size: 3vw;
+            text-align: center;
+        }
+        
+        #formulario-input-container {
+            font-size: 1.5vw;
+            margin-bottom: 1.5vw;
+        }
+
+        .form-label {
+            margin-bottom: .5vw;
+        }
+
+        .form-control {
+            width: 40vw;
+            height: 2.2vw;
+            font-size: 1.5vw;
+            padding: 0.375vw 0.75vw;
+        }
+
+        #comment {
+            height: 7vw;
+            resize: none;
+        }
+
+        #boton-enviar {
+            background-color:#9a91db;
+            border: none;
+            padding: .6vw 1.6vw;
+            font-family: 'Dongle', sans-serif;
+            font-size: 2vw;
+            font-weight: bold;
+        }
+
+        #boton-enviar:hover {
+            background-color: #788AAA;
+        }
+    
+        #boton-enviar:active {
+            background-color: #000000;
+        }
+    /*Fin formulario.html*/
+/*Fin Contacto.html*/
+
+/*Footer*/
+    .footer-container {
+        background-color: #EFEFEF;
+        font-family: 'Dongle', sans-serif;
+        padding: 1.5vw 12vw 2vw 12vw;
+        display: grid;
+        grid-template-columns: 1fr .7fr .5fr .5fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        'contacto navegacion redes logo';
+    }
+
+    .titulos-footer {
+        font-size: 2vw;
+        margin-bottom: .8vw;
+    }
+
+    .contacto-footer-container {
+        grid-area: contacto;
+    }
+
+    .contacto {
+        display: flex;
+        padding: 0 0 1.3vw 0;
+        align-items:center;
+    }
+
+    .contacto-icono {
+        width: 3vw;
+        height: 100%;
+    }
+
+    .contacto-info {
+        padding-left: 3%;
+        font-size: 1.7vw;
+        margin-bottom: 0;
+    }
+
+    .menu-footer {
+        grid-area: navegacion;
+    }
+
+    .links-footer-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        list-style: none;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+
+    .links-footer {
+        text-decoration: none;
+        font-size: 1.7vw;
+        color:#000000;
+    }
+
+    .redes-container {
+        grid-area: redes;
+    }
+
+    .redes {
+        display: flex;
+        justify-content:flex-start;
+    }
+
+    .redes-icono{
+        width: 3vw;
+        height: 100%;
+        margin-right: 1vw;
+    }
+
+    .Logo {
+        grid-area: logo;
+    }
+
+    .logo-footer {
+        width: 15vw;
+    }
+/*Fin footer*/
+    
+/*Media Queries*/
+    /*Queries Header*/
+        @media only screen and (max-width:1024px) {
+            .boton {
+                border: .18rem solid;
+                font-size: 1.5rem;
+            }
+        }
+
+        @media only screen and (min-width:769px) and (max-width:978px) {
+            .logo-slogan-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #logo-header {
+                width: 9rem;
+            }
+
+            #slogan-header {
+                width: 7rem;
+            }
+
+            .logo-header {
+                width: 15rem
+            }
+
+            .boton {
+                font-size: 1.3rem;
+                margin: .3rem;
+            }
+        }
+
+        @media only screen and (max-width:768px) { 
+            .container-fluid {
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+
+        @media only screen and (max-width:575px) {
+            .container-fluid {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .logo-header {
+                width: 60vw;
+            }
+
+            #logo-header {
+                width: 45vw;
+            }
+
+            #slogan-header {
+                display: none;
+            }
+
+            .navbar-toggler {
+                border: .15rem solid #788AAA;
+            }
+        }
+    /*Fin Queries Header*/
+
+    /*Queries Index*/
+        @media only screen and (max-width:768px) {
+            .seccion-1-container {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .imghome1 {
+                width: 100%;
+            }
+
+            .titulo-home {
+                font-size: 6vw;
+                margin-top: 3vw;
+                text-align: start;
+            }
+
+            .seccion-1 {
+                margin: 0 0 0 0;
+            }
+
+            .txt-home {
+                font-size: 3vw;
+            }
+
+            .imghome2 {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (max-width:425px) { 
+            .titulo-home {
+                font-size: 1.5rem;
+            }
+    
+            .seccion-1-container {
+                margin: 1rem 1rem 1rem 1rem;
+            }
+
+            .txt-home {
+                font-size: 1rem;
+            }
+        }
+    /*Fin Queries index*/
+
+    /*Queries Tienda*/
+        @media screen and (max-width:1440px) {
+            .titulo-producto {
+                font-size: 1.9rem;
+                margin-bottom: .5rem;
+            }
+    
+            .descripcion-productos {
+                font-size: 1.3rem
+            }
+    
+            .boton-comprar {
+                width: 7.2rem;
+                margin-top: 1.6rem;
+                padding: .1rem .9rem;
+                font-size: 2.2rem;
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            .productos-grid-container {
+                display: flex;
+                flex-direction: column;
+                row-gap: 2rem;
+                margin: 2rem 2rem 2rem 2rem;
+            }
+
+            .titulo-producto {
+                font-size: 7vw;
+                margin-bottom: .5rem;
+            }
+    
+            .imagenes-productos {
+                width: 100%
+            }
+
+            .descripcion-productos {
+                font-size: 4vw;
+                margin: .5rem 0% 0 0%;
+            }
+
+            .boton-comprar {
+                width: 7.3rem;
+                margin-top: 1.5rem;
+                padding: .1rem .9rem;
+                font-size: 2.2rem;
+            }
+        }
+
+        @media screen and (max-width:425px) {
+            .productos-grid-container {
+                row-gap: 1.8rem;
+                margin: 1rem 1rem 1.5rem 1rem;
+            }
+
+            .titulo-producto {
+                font-size: 1.5rem;
+                margin-bottom: .5rem;
+            }
+    
+            .descripcion-productos {
+                font-size: 1rem;
+                margin-top: .5rem;
+            }
+
+            .boton-comprar {
+                width: 7rem;
+                margin-top: 1.2rem;
+                padding: .1rem .9rem;
+                font-size: 2.0rem;
+            }
+        }
+    /*Fin Queries Tienda*/
+
+    /*Queries Soporte*/
+        @media only screen and (max-width:1024px) {
+            .faq-titulo {
+                font-size: 4vw;
+            }
+
+            .faq-grupo {
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+            }
+
+            .question {
+                font-size: 2.58vw;
+            }
+
+            .answer {
+                font-size: 2vw;
+            }
+        }
+
+        @media only screen and (max-width:425px) {
+            .soporte-productos-container {
+                flex-direction: column;
+                align-items: center;
+                margin: 1rem 0 1rem 0;
+            }
+
+            .soporte-productos {
+                width: 6rem;
+                justify-content: center;
+            }
+
+            .soporte-productos-img {
+                width: 22vw;
+            }
+    
+            .buscador-barra {
+                width: 70%;
+                height: 6.4vw;
+                font-size: 6.5vw;}
+
+            .soporte-titulo {
+                font-size: 9vw;
+            }
+
+            .faq-container {
+                margin: 1rem 1rem 1rem 1rem;
+            }
+
+            .faq-grupo {
+                width: 100%;
+                row-gap: .9rem;
+            }
+
+            .faq-titulo {
+                font-size: 1.5rem;
+                margin: 1rem 0 1rem 0;
+            }
+
+            .question {
+                font-size: 1.3rem;
+            }
+
+            .answer {
+                font-size: 1rem;
+            }
+        }
+    /*Fin Queries Soporte*/
+
+    /*Queries Nosotros*/
+        @media only screen and (max-width:768px) {
+            .nosotros-titulo {
+                font-size: 5vw;
+            }
+
+            .nosotros-container {
+                flex-direction: column;
+                font-size: 1.2rem;
+                justify-content: center;
+            }
+
+            .nosotros-img {
+                width: 100%;
+                margin-bottom: 4vw;
+            }
+
+            .nosotros-texto {
+                width: 100%;
+                margin-left: 0;
+                font-size: 3vw;
+            }
+        }
+
+        @media only screen and (max-width:425px) {
+            .nosotros-titulo {
+                font-size: 1.5rem;
+                margin: 1rem 1rem .5rem 1rem;
+            }
+
+            .nosotros-container {
+                margin: 0 1rem 1rem 1rem;
+            }
+
+            .nosotros-texto {
+                font-size: 1rem;
+            }
+        }
+    /*Fin Queries nosotros*/
+
+    /*Queries contacto*/
+    @media only screen and (max-width:768px) {
+        .contacto-titulo {
+            font-size: 6vw;
+            margin: 2vw 7% 1.5vw 7%;
+        }
+
+        .contacto-container {
+            margin: 0 7% 2vw 7%;  
+        }
+
+        .parrafo-contacto {
+            font-size: 2.5vw;
+        }
+
+        #contacto-icono {
+            width: 5vw;
+        }
+
+        #contacto-info {
+            font-size: 3vw;
+        }
+
+        #redes-icono {
+            width: 5vw;
+        }
+
+        .formulario-container {
+            margin: 1vw 7% 2vw 7% ;
+        }
+
+        .formulario-titulo {
+            font-size: 5vw;
+            margin-top: 2vw;
+        }
+
+        #formulario-input-container {
+            font-size: 2.5vw;
+        }
+
+        .form-control {
+            width: 50vw;
+            height: 3vw;
+            font-size: 2vw;
+            padding: 0.375vw 0.75vw;
+        }
+    }
+
+    @media only screen and (max-width:425px) { 
+        .contacto-titulo {
+            font-size: 1.5rem;
+            margin: 1rem 1rem .5rem 1rem;
+        }
+
+        .contacto-container {
+            margin: 0 1rem 1rem 1rem;  
+        }
+
+        .parrafo-contacto {
+            font-size: 1rem;
+        }
+
+        .info-redes {
+            margin: 0 8% 0 8%;
+            justify-content: space-between;
+        }
+
+        #contacto-icono {
+            width: 7vw;
+        }
+
+        #contacto-info {
+            font-size: 5vw;
+        }
+
+        #redes-icono {
+            width: 7vw;
+        }
+
+        .formulario-container {
+            margin: 0 1rem 1rem 1rem ;
+        }
+
+        .formulario-titulo {
+            font-size: 7vw;
+            margin-top: 3vw;
+        }
+
+        #formulario-input-container {
+            font-size: 3.5vw;
+        }
+
+        .form-control {
+            width: 50vw;
+            height: 5vw;
+            font-size: 3vw;
+            padding: 0.375vw 0.75vw;
+        }
+
+        #boton-enviar {
+            background-color:#9a91db;
+            border: none;
+            padding: 1vw 2vw;
+            font-family: 'Dongle', sans-serif;
+            font-size: 4vw;
+            font-weight: bold;
+        }
+    }
+
+    /*Fin Queries nosotros*/
+
+    /*Queries Footer*/
+        @media only screen and (max-width:768px) {
+            .footer-container {
+                grid-template-columns: 1fr .5fr;
+                grid-template-rows: 1fr 1fr;
+                column-gap: 1vw;
+                row-gap: 1.5vw;
+                grid-template-areas: 
+                'contacto redes'
+                'navegacion logo';
+                padding: 3vw 20vw 2vw 20vw;
+            }
+
+            .titulos-footer {
+                font-size: 4vw;
+                margin-bottom: 1vw; ;
+            }
+
+            .contacto-icono {
+                width: 3.5vw;
+                height: 100%;
+            }
+
+            .contacto-info {
+                font-size: 2.5vw;
+                margin-bottom: 0;
+            }
+
+            .redes {
+                display: flex;
+                flex-direction: column;
+            }
+        
+            .redes-icono{
+                width: 3.5vw;
+                height: 100%;
+                margin-bottom: 1.5vw;
+            }
+        
+            .menu-footer {
+                width: 25vw;
+            }
+
+            .links-footer {
+                display: flex;
+                flex-direction: column;
+                font-size: 2.5vw;
+            }
+
+            .logo-footer {
+                width: 20vw;
+            }
+        }
+
+        @media only screen and (max-width:425px) {
+            .footer-container {
+                grid-template-columns: 1fr;
+                grid-template-rows: .6fr .7fr .7fr 1fr;
+                row-gap: 1.5vw;
+                grid-template-areas: 
+                'contacto' 
+                'navegacion'
+                'redes' 
+                'logo';
+                padding: 3vw 25vw 2vw 25vw;
+                justify-content: center;
+            }
+
+            .titulos-footer {
+                font-size: 6vw;
+            }
+
+            .contacto-icono {
+                width: 5vw;
+                height: 100%;
+            }
+
+            .contacto-info {
+                font-size: 4vw;
+            }
+
+            .menu-footer {
+                width: 38vw;
+            }
+
+            .links-footer {
+                font-size: 4vw;
+            }
+        
+            .redes-icono{
+                width: 5vw;
+                height: 100%;
+            }
+
+            .logo-footer {
+                width: 35vw;
+            }
+        }
+    /*Fin Queries footer*/
