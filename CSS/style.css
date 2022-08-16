@@ -1,23 +1,24 @@
 /*CSS RESET*/
-@import url("https://fonts.googleapis.com/css2?family=Bellefair&family=Dongle:wght@300;400;700&family=Roboto+Mono:wght@200&display=swap");
 * {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
 }
 
-h3 {
-  margin-bottom: 0;
-}
-
 html {
   font-size: 20px;
 }
 
-/*Google fonts*/
-/*font-family: 'Bellefair', serif;
-font-family: 'Dongle', sans-serif;
-font-family: 'Roboto Mono', monospace;*/
+h3 {
+  margin-bottom: 0;
+}
+
+/*Google fonts
+    font-family: 'Bellefair', serif;
+    font-family: 'Dongle', sans-serif;
+    font-family: 'Roboto Mono', monospace;*/
+/*Variables*/
+/*Fin variables*/
 /*Header*/
 .header-container {
   background-color: #EFEFEF;
@@ -34,12 +35,13 @@ font-family: 'Roboto Mono', monospace;*/
 
 #logo-header {
   width: 11rem;
+  filter: drop-shadow(0.5rem 0.5rem 0.5rem #b5b7bb);
 }
 
 #slogan-header {
   width: 9rem;
   margin: 0 1.2rem 0 -1.2rem;
-  filter: drop-shadow(0.5rem 0.5rem 0.5rem #b9c2d1);
+  filter: drop-shadow(0.5rem 0.5rem 0.5rem #b5b7bb);
 }
 
 .animate__bounce {
@@ -59,7 +61,7 @@ font-family: 'Roboto Mono', monospace;*/
   padding: 1px 10px;
   border: 0.2rem solid #788AAA;
   border-radius: 1.3rem;
-  box-shadow: 0.5rem 0.5rem 0.5rem #b9c2d1;
+  box-shadow: 0.5rem 0.5rem 0.5rem #b5b7bb;
   background-color: #ffffff;
   font-size: 1.7rem;
   text-decoration: none;

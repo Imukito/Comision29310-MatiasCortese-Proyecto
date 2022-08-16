@@ -4,23 +4,36 @@
     padding: 0%;
     box-sizing: border-box;
 }
-h3{
-    margin-bottom: 0;
-    }
 
 html {
     font-size: 20px
 }
 
-/*Google fonts*/
-    @import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Dongle:wght@300;400;700&family=Roboto+Mono:wght@200&display=swap');
-    /*font-family: 'Bellefair', serif;
+h3{
+    margin-bottom: 0;
+    }
+
+/*Google fonts
+    font-family: 'Bellefair', serif;
     font-family: 'Dongle', sans-serif;
     font-family: 'Roboto Mono', monospace;*/
 
+/*Variables*/
+    $color1: #EFEFEF;
+    $color2: #D6D4D4;
+    $color3: #788AAA;
+    $color4: #F39288;
+    $color5: #9a91db;
+    $color6: #414141;
+    $sombras: #b5b7bb;
+    $fuente1: 'Dongle', sans-serif;
+    $fuente2: 'Bellefair', serif;
+
+/*Fin variables*/
+
 /*Header*/
     .header-container {
-        background-color: #EFEFEF;
+        background-color: $color1;
         justify-content: center;
         align-items: center;
         padding: 1.5vw;
@@ -29,17 +42,18 @@ html {
     .logo-header {
         width: 16rem;
         margin-right: 1rem;
-        filter: drop-shadow(.5rem .5rem .5rem #b5b7bb)
+        filter: drop-shadow(.5rem .5rem .5rem $sombras)
     }
 
     #logo-header {
         width: 11rem;
+        filter: drop-shadow(.5rem .5rem .5rem $sombras)
     }
 
     #slogan-header {
         width: 9rem;
         margin: 0 1.2rem 0 -1.2rem ;
-        filter: drop-shadow(.5rem .5rem .5rem #b9c2d1)
+        filter: drop-shadow(.5rem .5rem .5rem $sombras)
     }
 
     .animate__bounce {
@@ -48,23 +62,23 @@ html {
     }
 
     .menu-navegable {
-        font-family: 'Dongle', sans-serif;
+        font-family: $fuente1;
         font-weight: bold;
-        font-display: #788AAA;
+        font-display: $color3;
         list-style-type: none;
     }
     
     .boton {
         margin: .6rem;
         padding: 1px 10px;
-        border: .2rem solid #788AAA;
+        border: .2rem solid $color3;
         border-radius: 1.3rem;
-        box-shadow: .5rem .5rem .5rem #b9c2d1;
+        box-shadow: .5rem .5rem .5rem $sombras;
         background-color: #ffffff;
         font-size: 1.7rem;
         text-decoration: none;
         text-align: center;
-        color: #788AAA;
+        color: $color3;
         letter-spacing: .05rem;
         cursor: pointer;
     }
@@ -74,12 +88,12 @@ html {
     }
 
     .boton:hover {
-        background-color: #788AAA;
+        background-color: $color3;
         color: #ffffff;
     }
 
     .boton:active {
-        background-color: #F39288;
+        background-color: $color4;
     }
 /*Fin header*/
 
@@ -87,8 +101,8 @@ html {
     /*Imagen temporal y slider carrousel*/
         .mensaje-temporal-container {
             width: 100%;
-            background-color: #D6D4D4;
-            border-bottom: .2vw solid #788AAA;
+            background-color: $color2;
+            border-bottom: .2vw solid $color3;
             display: flex;
             justify-content: center;
             padding: 1vw;
@@ -113,12 +127,12 @@ html {
 
         .seccion-1 {
             margin: 0 0 0 1rem;
-            font-family: 'Bellefair', serif;
+            font-family: $fuente2
         }
 
         .titulo-home {
             font-size: 3vw;
-            color: #414141;
+            color: $color6;
             margin-bottom: 1vw;
         }
 
@@ -161,13 +175,13 @@ html {
             margin-left: 90vw;
             width: 8vw;
             height: 8vw;
-            background-color: #9a91db;
-            font-family:'Dongle', sans-serif;
+            background-color: $color5;
+            font-family:$fuente1;
             text-align: center;
             line-height: 12vw;
             font-size: 4.5vw;
             font-weight: bold;
-            color: #EFEFEF;
+            color: $color1;
             animation-name: circle;
             animation-duration: 5s;
             animation-iteration-count: infinite;
@@ -236,9 +250,9 @@ html {
         }
 
         .titulo-producto {
-            font-family: 'Bellefair', serif;
+            font-family: $fuente2;
             font-size: 2.5vw;
-            color: #414141;
+            color: $color6;
             margin: 0 0 1rem 0;
             text-align: start;
         }
@@ -254,7 +268,7 @@ html {
         }
 
         .descripcion-productos {
-            font-family: 'Bellefair', serif;
+            font-family: $fuente2;
             font-size: 1.5vw;
             text-align: justify;
             margin: 1vw 0 0 0;
@@ -262,12 +276,12 @@ html {
 
         .boton-comprar {
             width: 10vw;
-            background-color: #F39288;
+            background-color: $color4;
             border: none;
             border-radius: .9rem;
             margin-top: 1.7vw;
             padding: .1rem .9rem;
-            font-family: 'Dongle', sans-serif;
+            font-family: $fuente1;
             font-size: 3vw;
             font-weight: bold;
             color: #ffffff;
@@ -281,11 +295,11 @@ html {
         }
 
         .boton-comprar:hover{
-            background-color: #9a91db;
+            background-color: $color5;
         }
 
         .boton-comprar:active{
-            background-color: #788AAA;
+            background-color: $color3;
         }
     /*Fin productos*/
 /*Fin tienda.html*/
@@ -322,8 +336,8 @@ html {
     /*Buscador*/
         .buscador-container {
             display: flex;
-            border-top: .21vw solid #788AAA;
-            border-bottom: .21vw solid #788AAA;
+            border-top: .21vw solid $color3;
+            border-bottom: .21vw solid $color3;
             padding: 4vw 0rem 4vw 0rem;
             justify-content: center;
         }
@@ -502,7 +516,7 @@ html {
         }
 
         #boton-enviar:hover {
-            background-color: #788AAA;
+            background-color: $color3;
         }
     
         #boton-enviar:active {
@@ -651,7 +665,7 @@ html {
             }
 
             .navbar-toggler {
-                border: .15rem solid #788AAA;
+                border: .15rem solid $color3;
             }
         }
     /*Fin Queries Header*/
