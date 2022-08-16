@@ -28,7 +28,6 @@ h3{
     $sombras: #b5b7bb;
     $fuente1: 'Dongle', sans-serif;
     $fuente2: 'Bellefair', serif;
-
 /*Fin variables*/
 
 /*Header*/
@@ -328,7 +327,7 @@ h3{
         }
 
         .soporte-titulo {
-            font-family: 'Dongle', sans-serif;
+            font-family: $fuente1;
             font-size: 3vw;
         }
     /*Fin soporte productos*/
@@ -345,7 +344,7 @@ h3{
         .buscador-barra {
             width: 46%;
             height: 2.4vw;
-            font-family: 'Dongle', sans-serif;
+            font-family: $fuente1;
             font-size: 2vw;
             text-align: start;
         }
@@ -353,9 +352,9 @@ h3{
 
     /*Preguntas frecuentes*/
         .faq-titulo {
-            font-family: 'Bellefair', serif;
+            font-family: $fuente2;
             font-size: 2.5vw;
-            color: #414141;
+            color: $color6;
             margin: 3vw 0 2.5vw 0;
             text-align: center;
         }
@@ -363,7 +362,7 @@ h3{
         .faq-container {
             display: flex;
             justify-content: center;
-            font-family: 'Bellefair', serif;
+            font-family: $fuente2;
         }
 
         .faq-grupo {
@@ -391,42 +390,42 @@ h3{
 
 /*Nosotros.html*/
     .nosotros-titulo {
-        font-family: 'Bellefair', serif;
+        font-family: $fuente2;
         font-size: 3VW;
-        color: #414141;
+        color: $color6;
         margin: 2VW 10% 1.5VW 10%;
     }
 
     .nosotros-container {
-        font-family: 'Bellefair', serif;
+        font-family: $fuente2;
         font-size: 1.6VW;
         text-align: justify;
         display: flex;
         margin: 0 10% 2VW 10%;
-    }
 
-    .nosotros-img {
-        width: 40VW;
-        height: 100%;
-    }
+        .nosotros-img {
+            width: 40VW;
+            height: 100%;
+        }
 
-    .nosotros-texto {
-        width: 40VW;
-        margin-left: 2.5VW;
-        margin-bottom: 0;
+        .nosotros-texto {
+            width: 40VW;
+            margin-left: 2.5VW;
+            margin-bottom: 0;
+        }
     }
 /*Fin Nosotros.html*/
 
 /*Contacto.html*/
     /*Contacto*/
         .contacto-titulo {
-            font-family: 'Bellefair', serif;
+            font-family: $fuente2;
             font-size: 3vw;
-            color: #414141;
+            color: $color6;
             margin: 2vw 15% 1.5vw 15%;
         }
         .contacto-container {
-            font-family: 'Bellefair', serif;
+            font-family: $fuente2;
             font-size: 1.2vw;
             text-align: justify;
             margin: 0 15% 2vw 15%;
@@ -461,7 +460,7 @@ h3{
         }
 
         #contacto-info {
-            font-family: 'Dongle', sans-serif;
+            font-family: $fuente1;
             margin: 0 0 0 0;
             padding-left: 1.3vw;
         }
@@ -473,14 +472,14 @@ h3{
 
     /*Formulario.html*/ 
         .formulario-container {
-            background-color:#F39288;
-            font-family: 'Bellefair', serif;
+            background-color:$color4;
+            font-family: $fuente2;
             margin: 1vw 15% 2vw 15% ;
             padding: 1.5vw 0 1.8vw 0;
         }
 
         .formulario-titulo {
-            font-family: 'Bellefair', serif;
+            font-family: $fuente2;
             font-size: 3vw;
             text-align: center;
         }
@@ -507,10 +506,10 @@ h3{
         }
 
         #boton-enviar {
-            background-color:#9a91db;
+            background-color:$color5;
             border: none;
             padding: .6vw 1.6vw;
-            font-family: 'Dongle', sans-serif;
+            font-family: $fuente1;
             font-size: 2vw;
             font-weight: bold;
         }
@@ -520,15 +519,15 @@ h3{
         }
     
         #boton-enviar:active {
-            background-color: #000000;
+            background-color: #000000; 
         }
     /*Fin formulario.html*/
 /*Fin Contacto.html*/
 
 /*Footer*/
     .footer-container {
-        background-color: #EFEFEF;
-        font-family: 'Dongle', sans-serif;
+        background-color: $color1;
+        font-family: $fuente1;
         padding: 1.5vw 12vw 2vw 12vw;
         display: grid;
         grid-template-columns: 1fr .7fr .5fr .5fr;
@@ -998,10 +997,10 @@ h3{
         }
 
         #boton-enviar {
-            background-color:#9a91db;
+            background-color:$color5;
             border: none;
             padding: 1vw 2vw;
-            font-family: 'Dongle', sans-serif;
+            font-family: $fuente1;
             font-size: 4vw;
             font-weight: bold;
         }

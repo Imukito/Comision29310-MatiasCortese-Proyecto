@@ -384,13 +384,11 @@ h3 {
   display: flex;
   margin: 0 10% 2VW 10%;
 }
-
-.nosotros-img {
+.nosotros-container .nosotros-img {
   width: 40VW;
   height: 100%;
 }
-
-.nosotros-texto {
+.nosotros-container .nosotros-texto {
   width: 40VW;
   margin-left: 2.5VW;
   margin-bottom: 0;
