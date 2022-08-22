@@ -524,6 +524,29 @@ h3{
     /*Fin formulario.html*/
 /*Fin Contacto.html*/
 
+/*Condiciones.html*/
+.condiciones-titulo {
+    font-family: $fuente2;
+    font-size: 3VW;
+    color: $color6;
+    margin: 2VW 0 1.5VW 0;
+    text-align: center;
+}
+
+.condiciones-container {
+    font-family: $fuente2;
+    font-size: 1.6VW;
+    text-align: justify;
+    display: flex;
+    margin-bottom: 2VW;
+
+    .condiciones-texto {
+        margin: 0 15% 0 15%;
+    }
+}
+/*Fin Condiciones.html*/
+
+
 /*Footer*/
     .footer-container {
         background-color: $color1;
@@ -888,11 +911,15 @@ h3{
             }
 
             .nosotros-container {
+                width: 100%;
                 margin: 0 1rem 1rem 1rem;
             }
 
             .nosotros-texto {
                 font-size: 1rem;
+            }
+
+            .nosotros-img {
             }
         }
     /*Fin Queries nosotros*/
@@ -1005,8 +1032,38 @@ h3{
             font-weight: bold;
         }
     }
-
     /*Fin Queries nosotros*/
+
+    /*Queries condiciones*/
+    @media only screen and (max-width:768px) {
+        .condiciones-titulo {
+            font-size: 5vw;
+        }
+
+        .condiciones-container {
+            font-size: 1.2rem;
+        }
+
+        .nosotros-texto {
+            font-size: 3vw;
+        }
+    }
+
+    @media only screen and (max-width:425px) {
+        .condiciones-titulo {
+            font-size: 1.5rem;
+            margin: 1rem 1rem .5rem 1rem;
+        }
+
+        .nosotros-container {
+            margin: 0 1rem 1rem 1rem;
+        }
+    
+        .nosotros-texto {
+            font-size: 1rem;
+        }
+    }
+    /*Fin Queries condiciones*/
 
     /*Queries Footer*/
         @media only screen and (max-width:768px) {
