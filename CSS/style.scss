@@ -402,17 +402,17 @@ h3{
         text-align: justify;
         display: flex;
         margin: 0 10% 2VW 10%;
+    }
 
-        .nosotros-img {
-            width: 40VW;
-            height: 100%;
-        }
+    .nosotros-img {
+        width: 40VW;
+        height: 100%;
+    }
 
-        .nosotros-texto {
-            width: 40VW;
-            margin-left: 2.5VW;
-            margin-bottom: 0;
-        }
+    .nosotros-texto {
+        width: 40VW;
+        margin-left: 2.5VW;
+        margin-bottom: 0;
     }
 /*Fin Nosotros.html*/
 
@@ -911,15 +911,11 @@ h3{
             }
 
             .nosotros-container {
-                width: 100%;
                 margin: 0 1rem 1rem 1rem;
             }
 
             .nosotros-texto {
                 font-size: 1rem;
-            }
-
-            .nosotros-img {
             }
         }
     /*Fin Queries nosotros*/

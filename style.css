@@ -45,10 +45,8 @@ h3 {
 }
 
 .animate__bounce {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
 }
 
 .menu-navegable {
@@ -153,8 +151,7 @@ h3 {
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: "producto-1 producto-2" "producto-3 producto-4" "producto-5 producto-6";
   row-gap: 3vw;
-  -moz-column-gap: 3vw;
-       column-gap: 3vw;
+  column-gap: 3vw;
   margin: 3.1vw 13% 3.1vw 13%;
 }
 
@@ -170,37 +167,12 @@ h3 {
   font-size: 4.5vw;
   font-weight: bold;
   color: #EFEFEF;
-  -webkit-animation-name: circle;
-          animation-name: circle;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
-}
-
-@-webkit-keyframes circle {
-  0% {
-    border-radius: 0%;
-  }
-  25% {
-    border-radius: 25%;
-  }
-  50% {
-    border-radius: 50%;
-  }
-  75% {
-    border-radius: 75%;
-  }
-  100% {
-    border-radius: 100%;
-    transform: translateY(2565px);
-  }
+  animation-name: circle;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  animation-direction: normal;
+  animation-timing-function: ease-in;
 }
 
 @keyframes circle {
@@ -297,12 +269,9 @@ h3 {
 }
 
 .animate__pulse {
-  -webkit-animation-name: slogan;
-          animation-name: slogan;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-name: slogan;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
 }
 
 .boton-comprar:hover {
@@ -383,8 +352,7 @@ h3 {
   grid-template-rows: 1fr 1fr;
   margin: 0rem 0rem 3vw 0rem;
   row-gap: 2vw;
-  -moz-column-gap: 3vw;
-       column-gap: 3vw;
+  column-gap: 3vw;
   width: 60%;
 }
 
@@ -995,8 +963,7 @@ h3 {
   .footer-container {
     grid-template-columns: 1fr 0.5fr;
     grid-template-rows: 1fr 1fr;
-    -moz-column-gap: 1vw;
-         column-gap: 1vw;
+    column-gap: 1vw;
     row-gap: 1.5vw;
     grid-template-areas: "contacto redes" "navegacion logo";
     padding: 3vw 20vw 2vw 20vw;
@@ -1067,4 +1034,6 @@ h3 {
     width: 35vw;
   }
 }
-/*Fin Queries footer*//*# sourceMappingURL=style.css.map */
+/*Fin Queries footer*/
+
+/*# sourceMappingURL=style.css.map */
