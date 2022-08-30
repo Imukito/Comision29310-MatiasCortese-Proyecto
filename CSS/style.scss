@@ -152,6 +152,42 @@ h3{
             justify-content: center;
         }
     /*Fin videos*/
+
+    /*Reviews*/
+        
+    /*Fin reviews*/
+
+    /*Mapa*/
+    .mapa-container {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 5vw 10% 5vw 10%;
+    }
+
+    $redes: (
+            10px: red,
+            20px: orange,
+            30px: yellow,
+            40px: purple,
+        );
+
+        @each $red, $font in $redes {
+            .btn--#{$red} {
+                background-color: $color3;
+                height: 200px;
+                width: 100%;
+                border: 2px solid #111;
+                text-align: center;
+                font-size: $red;
+                line-height: 200px;
+                color: $font;
+                text-transform: uppercase;
+                text-shadow: 0 0 5px $font;
+                font-family: cursive;
+                border-radius: 10px;
+            }
+        }
+        /*Fin mapa*/
 /*Fin index.html*/
 
 /*Tienda.html*/

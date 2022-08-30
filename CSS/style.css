@@ -144,6 +144,76 @@ h3 {
 }
 
 /*Fin videos*/
+/*Reviews*/
+/*Fin reviews*/
+/*Mapa*/
+.mapa-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5vw 10% 5vw 10%;
+}
+
+.btn--10px {
+  background-color: #788AAA;
+  height: 200px;
+  width: 100%;
+  border: 2px solid #111;
+  text-align: center;
+  font-size: 10px;
+  line-height: 200px;
+  color: red;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px red;
+  font-family: cursive;
+  border-radius: 10px;
+}
+
+.btn--20px {
+  background-color: #788AAA;
+  height: 200px;
+  width: 100%;
+  border: 2px solid #111;
+  text-align: center;
+  font-size: 20px;
+  line-height: 200px;
+  color: orange;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px orange;
+  font-family: cursive;
+  border-radius: 10px;
+}
+
+.btn--30px {
+  background-color: #788AAA;
+  height: 200px;
+  width: 100%;
+  border: 2px solid #111;
+  text-align: center;
+  font-size: 30px;
+  line-height: 200px;
+  color: yellow;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px yellow;
+  font-family: cursive;
+  border-radius: 10px;
+}
+
+.btn--40px {
+  background-color: #788AAA;
+  height: 200px;
+  width: 100%;
+  border: 2px solid #111;
+  text-align: center;
+  font-size: 40px;
+  line-height: 200px;
+  color: purple;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px purple;
+  font-family: cursive;
+  border-radius: 10px;
+}
+
+/*Fin mapa*/
 /*Fin index.html*/
 /*Tienda.html*/
 /*Productos*/
