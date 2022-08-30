@@ -120,13 +120,13 @@ h3 {
   font-family: "Bellefair", serif;
 }
 
-.titulo-home {
+.titulo-home, .cliente-titulo {
   font-size: 3vw;
   color: #414141;
   margin-bottom: 1vw;
 }
 
-.txt-home {
+.txt-home, .review-texto {
   font-size: 1.5vw;
   text-align: justify;
   margin-bottom: 1rem;
@@ -144,8 +144,58 @@ h3 {
 }
 
 /*Fin videos*/
-/*Reviews*/
-/*Fin reviews*/
+/*Reviews - Mixin*/
+.reviews-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 2vw;
+  -moz-column-gap: 3vw;
+       column-gap: 3vw;
+  margin: 3.1vw 15% 3.1vw 15%;
+}
+
+.cliente-titulo {
+  font-family: "Bellefair", serif;
+}
+
+.reviews-1 {
+  width: 100%;
+  height: 75%;
+  background-color: #788AAA;
+}
+
+.reviews-2 {
+  width: 100%;
+  height: 75%;
+  background-color: #788AAA;
+}
+
+.reviews-3 {
+  width: 100%;
+  height: 75%;
+  background-color: #788AAA;
+}
+
+.reviews-4 {
+  width: 100%;
+  height: 75%;
+  background-color: #788AAA;
+}
+
+.img-perfil {
+  width: 15vw;
+  margin-bottom: 1.5vw;
+}
+
+.review-texto {
+  font-family: "Dongle", sans-serif;
+  color: #EFEFEF;
+  text-align: justify;
+  padding: 0 2vw 2vw 2vw;
+}
+
+/*Fin reviews - Mixin*/
 /*Mapa*/
 .mapa-container {
   display: flex;
@@ -769,7 +819,7 @@ h3 {
   .imghome1 {
     width: 100%;
   }
-  .titulo-home {
+  .titulo-home, .cliente-titulo {
     font-size: 6vw;
     margin-top: 3vw;
     text-align: start;
@@ -777,21 +827,25 @@ h3 {
   .seccion-1 {
     margin: 0 0 0 0;
   }
-  .txt-home {
+  .txt-home, .review-texto {
     font-size: 3vw;
   }
   .imghome2 {
     width: 100%;
   }
+  .reviews-container {
+    display: flex;
+    flex-direction: column;
+  }
 }
 @media only screen and (max-width: 425px) {
-  .titulo-home {
+  .titulo-home, .cliente-titulo {
     font-size: 1.5rem;
   }
   .seccion-1-container {
     margin: 1rem 1rem 1rem 1rem;
   }
-  .txt-home {
+  .txt-home, .review-texto {
     font-size: 1rem;
   }
 }

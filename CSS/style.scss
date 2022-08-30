@@ -153,9 +153,56 @@ h3{
         }
     /*Fin videos*/
 
-    /*Reviews*/
-        
-    /*Fin reviews*/
+    /*Reviews - Mixin*/
+        @mixin reviews-container ($width, $height, $bcolor) {
+            width: 100%;
+            height: 75%;
+            background-color: $color3;
+        }
+
+        .reviews-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            row-gap: 2vw;
+            column-gap: 3vw;
+            margin: 3.1vw 15% 3.1vw 15%;
+        }
+
+        .cliente-titulo {
+            @extend .titulo-home;
+            font-family: $fuente2;
+        }
+
+        .reviews-1 {
+            @include reviews-container(100%, 75%, $color3)
+        }
+
+        .reviews-2 {
+            @include reviews-container(100%, 75%, $color3)
+        }
+
+        .reviews-3 {
+            @include reviews-container(100%, 75%, $color3)
+        }
+
+        .reviews-4 {
+            @include reviews-container(100%, 75%, $color3)
+        }
+
+        .img-perfil {
+            width: 15vw;
+            margin-bottom: 1.5vw;
+        }
+
+        .review-texto {
+            @extend .txt-home;
+            font-family: $fuente1;
+            color: $color1;
+            text-align: justify;
+            padding: 0 2vw 2vw 2vw;
+        }
+    /*Fin reviews - Mixin*/
 
     /*Mapa*/
     .mapa-container {
@@ -187,7 +234,7 @@ h3{
                 border-radius: 10px;
             }
         }
-        /*Fin mapa*/
+    /*Fin mapa*/
 /*Fin index.html*/
 
 /*Tienda.html*/
@@ -756,6 +803,16 @@ h3{
             .imghome2 {
                 width: 100%;
             }
+
+            .reviews-container {
+                display: flex;
+                flex-direction: column;
+            }
+
+            
+
+
+
         }
 
         @media only screen and (max-width:425px) { 

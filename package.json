@@ -1,0 +1,19 @@
+{
+  "name": "Tito Bird Feeder",
+  "version": "1.0.0",
+  "description": "Desarrollo web de la marca Tito Bird Feeder. Este proyecto está especialmente dedicado al desarrollo de comederos de aves tech que tienen el objetivo de acercar la naturaleza a aquellso que viven una vida ajetreada en la ciudad, rodeados de cemento..",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Imukito/Comision29310-MatiasCortese-Proyecto.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Imukito/Comision29310-MatiasCortese-Proyecto/issues"
+  },
+  "homepage": "https://github.com/Imukito/Comision29310-MatiasCortese-Proyecto#readme"
+}
