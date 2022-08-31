@@ -161,30 +161,34 @@ h3 {
 
 .reviews-1 {
   width: 100%;
-  height: 75%;
+  height: 85%;
   background-color: #788AAA;
+  border-radius: 5vw;
 }
 
 .reviews-2 {
   width: 100%;
-  height: 75%;
+  height: 85%;
   background-color: #788AAA;
+  border-radius: 5vw;
 }
 
 .reviews-3 {
   width: 100%;
-  height: 75%;
+  height: 85%;
   background-color: #788AAA;
+  border-radius: 5vw;
 }
 
 .reviews-4 {
   width: 100%;
-  height: 75%;
+  height: 85%;
   background-color: #788AAA;
+  border-radius: 5vw;
 }
 
 .img-perfil {
-  width: 15vw;
+  width: 100%;
   margin-bottom: 1.5vw;
 }
 
@@ -837,6 +841,10 @@ h3 {
     display: flex;
     flex-direction: column;
   }
+  .review-texto {
+    font-size: 4vw;
+    padding: 2vw 5vw 5vw 5vw;
+  }
 }
 @media only screen and (max-width: 425px) {
   .titulo-home, .cliente-titulo {
@@ -847,6 +855,9 @@ h3 {
   }
   .txt-home, .review-texto {
     font-size: 1rem;
+  }
+  .review-texto {
+    font-size: 6vw;
   }
 }
 /*Fin Queries index*/
