@@ -258,17 +258,19 @@ h3{
             width: 8vw;
             height: 8vw;
             background-color: $color3;
-            font-family:$fuente1;
             text-align: center;
             line-height: 10.5vw;
             font-size: 4.5vw;
             font-weight: bold;
-            color: $color1;
         }
 
         #circle:hover {
             cursor: pointer;
             background-color: $color6;
+        }
+
+        .circle {
+            color: $color1;
         }
 
         .producto-1 {
@@ -1057,13 +1059,13 @@ h3{
             }
 
             .soporte-productos-img {
-                width: 22vw;
+                width: 19vw;
             }
     
             #buscador-barra {
                 width: 78%;
-                height: 6.4vw;
-                font-size: 6.5vw;}
+                height: 9vw;
+                font-size: 1.2rem;}
 
             .soporte-titulo {
                 font-size: 9vw;
@@ -1081,17 +1083,17 @@ h3{
             }
 
             .faq-titulo {
-                font-size: 1.5rem;
+                font-size: 1.6rem;
                 margin: 1rem 0 1rem 0;
             }
 
             .question {
-                font-size: 1.1rem;
+                font-size: 1.3rem;
                 margin-top: 3.5vw;
             }
 
             .answer {
-                font-size: 1.1rem;
+                font-size: 1rem;
             }
         }
     /*Fin Queries Soporte*/
@@ -1231,7 +1233,7 @@ h3{
 
         .formulario-titulo {
             font-size: 1.5rem;
-            margin-top: 3vw;
+            margin-top: 5.5vw;
         }
 
         #formulario-input-container {
