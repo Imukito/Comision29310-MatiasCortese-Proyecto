@@ -770,12 +770,12 @@ h3 {
   }
   .boton {
     margin: 0.2rem;
-    padding: 0.4px 0px;
+    padding: 0.1px 0px;
     border: 0.1rem solid #788AAA;
     border-radius: 0.7rem;
     box-shadow: 0.5rem 0.5rem 0.5rem #b5b7bb;
     background-color: #EFEFEF;
-    font-size: 6vw;
+    font-size: 1.2rem;
   }
 }
 /*Fin Queries Header*/
@@ -1124,7 +1124,7 @@ h3 {
     width: 7vw;
   }
   #contacto-info {
-    font-size: 5vw;
+    font-size: 1.1rem;
   }
   #redes-icono {
     width: 7vw;
@@ -1134,24 +1134,25 @@ h3 {
     padding-left: 17%;
   }
   .formulario-titulo {
-    font-size: 7vw;
+    font-size: 1.5rem;
     margin-top: 3vw;
   }
   #formulario-input-container {
-    font-size: 3.5vw;
+    font-size: 1rem;
   }
   .form-control {
-    width: 50vw;
-    height: 5vw;
-    font-size: 3vw;
+    width: 55vw;
+    height: 8vw;
+    border-radius: 3vw;
+    font-size: 0.8rem;
     padding: 0.375vw 0.75vw;
   }
   #boton-enviar {
     background-color: #9a91db;
     border: none;
-    padding: 1vw 2vw;
+    padding: 2vw 3vw;
     font-family: "Dongle", sans-serif;
-    font-size: 4vw;
+    font-size: 1.1rem;
     font-weight: bold;
   }
 }
@@ -1174,7 +1175,10 @@ h3 {
     margin: 1rem 1rem 0.5rem 1rem;
   }
   .nosotros-container {
-    margin: 0 0rem 1rem 0rem;
+    margin: 0 1rem 1rem 1rem;
+  }
+  .condiciones-texto {
+    margin: 0 0 0 0;
   }
   .nosotros-texto {
     font-size: 1.1rem;
@@ -1227,35 +1231,44 @@ h3 {
 }
 @media only screen and (max-width: 425px) {
   .footer-container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.6fr 0.7fr 0.7fr 1fr;
-    row-gap: 1.5vw;
-    grid-template-areas: "contacto" "navegacion" "redes" "logo";
-    padding: 3vw 25vw 2vw 25vw;
+    display: flex;
+    flex-direction: column;
+    padding: 3vw 1rem 2vw 1rem;
     justify-content: center;
   }
   .titulos-footer {
-    font-size: 6vw;
+    font-size: 1.5rem;
+    margin-top: 4.5vw;
+    margin-bottom: 2vw;
   }
   .contacto-icono {
-    width: 5vw;
+    width: 7vw;
     height: 100%;
   }
   .contacto-info {
-    font-size: 4vw;
+    font-size: 1.1rem;
   }
   .menu-footer {
     width: 38vw;
   }
+  .links-footer-container {
+    display: flex;
+    flex-direction: column;
+  }
   .links-footer {
-    font-size: 4vw;
+    font-size: 1.1rem;
   }
   .redes-icono {
-    width: 5vw;
+    width: 8vw;
     height: 100%;
   }
   .logo-footer {
     width: 35vw;
+    margin-top: 4.5vw;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
   }
 }
 /*Fin Queries footer*//*# sourceMappingURL=style.css.map */
