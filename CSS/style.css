@@ -245,9 +245,9 @@ h3 {
 }
 
 #circle {
-  position: absolute;
-  margin-left: 90vw;
-  margin-top: -12vw;
+  position: fixed;
+  bottom: 65px !important;
+  right: 25px !important;
   width: 8vw;
   height: 8vw;
   background-color: #788AAA;
@@ -770,17 +770,20 @@ h3 {
   }
   .boton {
     margin: 0.2rem;
-    padding: 0.5px 0px;
+    padding: 0.4px 0px;
     border: 0.1rem solid #788AAA;
     border-radius: 0.7rem;
     box-shadow: 0.5rem 0.5rem 0.5rem #b5b7bb;
     background-color: #EFEFEF;
-    font-size: 5.5vw;
+    font-size: 6vw;
   }
 }
 /*Fin Queries Header*/
 /*Queries Index*/
 @media only screen and (max-width: 768px) {
+  .mensaje-temporal {
+    height: 4vw;
+  }
   .seccion-1-container {
     display: flex;
     flex-direction: column;
@@ -831,17 +834,30 @@ h3 {
   }
 }
 @media only screen and (max-width: 425px) {
+  .mensaje-temporal {
+    height: 6vw;
+  }
   .titulo-home {
     font-size: 1.5rem;
+    margin-top: 6vw;
+    margin-bottom: 5vw;
   }
   .seccion-1-container {
     margin: 1rem 1rem 1rem 1rem;
   }
   .txt-home, .review-texto {
+    font-size: 1.1rem;
+  }
+  .reviews-titulo {
+    font-size: 1.5rem;
+    margin-top: 6vw;
+    margin-bottom: 5vw;
+  }
+  .cliente-titulo {
     font-size: 1rem;
   }
   .review-texto {
-    font-size: 6vw;
+    font-size: 1.1rem;
   }
 }
 /*Fin Queries index*/
@@ -861,7 +877,21 @@ h3 {
     font-size: 2.2rem;
   }
 }
+@media screen and (max-width: 1024px) {
+  #circle {
+    width: 9vw;
+    height: 9vw;
+    line-height: 11vw;
+    font-size: 4vw;
+  }
+}
 @media screen and (max-width: 768px) {
+  #circle {
+    width: 11vw;
+    height: 11vw;
+    line-height: 13.3vw;
+    font-size: 5vw;
+  }
   .productos-grid-container {
     display: flex;
     flex-direction: column;
@@ -891,12 +921,18 @@ h3 {
     row-gap: 1.8rem;
     margin: 1rem 1rem 1.5rem 1rem;
   }
+  #circle {
+    width: 17vw;
+    height: 17vw;
+    line-height: 20vw;
+    font-size: 9vw;
+  }
   .titulo-producto {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
   }
   .descripcion-productos {
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-top: 0.5rem;
   }
   .boton-comprar {
@@ -974,16 +1010,19 @@ h3 {
   .faq-grupo {
     width: 100%;
     row-gap: 0.9rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
   }
   .faq-titulo {
     font-size: 1.5rem;
     margin: 1rem 0 1rem 0;
   }
   .question {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+    margin-top: 3.5vw;
   }
   .answer {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }
 /*Fin Queries Soporte*/
@@ -1018,7 +1057,7 @@ h3 {
     margin: 0 1rem 1rem 1rem;
   }
   .nosotros-texto {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }
 /*Fin Queries nosotros*/
@@ -1075,7 +1114,7 @@ h3 {
     margin: 0 1rem 1rem 1rem;
   }
   .parrafo-contacto {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   .info-redes {
     margin: 0 8% 0 8%;
@@ -1135,10 +1174,10 @@ h3 {
     margin: 1rem 1rem 0.5rem 1rem;
   }
   .nosotros-container {
-    margin: 0 1rem 1rem 1rem;
+    margin: 0 0rem 1rem 0rem;
   }
   .nosotros-texto {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }
 /*Fin Queries condiciones*/

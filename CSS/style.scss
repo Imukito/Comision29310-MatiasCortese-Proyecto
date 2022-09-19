@@ -252,9 +252,9 @@ h3{
         }
 
         #circle {
-            position: absolute;
-            margin-left: 90vw;
-            margin-top: -12vw;
+            position:fixed;
+            bottom: 65px !important;
+            right: 25px !important;
             width: 8vw;
             height: 8vw;
             background-color: $color3;
@@ -785,19 +785,22 @@ h3{
 
             .boton {
                 margin: 0.2rem;
-                padding: .5px 0px;
+                padding: .4px 0px;
                 border: 0.1rem solid $color3;
                 border-radius: .7rem;
                 box-shadow: .5rem .5rem .5rem $sombras;
                 background-color: $color1;
-                font-size: 5.5vw;
+                font-size: 6vw;
             }
-
         }
     /*Fin Queries Header*/
 
     /*Queries Index*/
         @media only screen and (max-width:768px) {
+            .mensaje-temporal {
+                height: 4vw;
+            }
+
             .seccion-1-container {
                 display: flex;
                 flex-direction: column;
@@ -860,8 +863,14 @@ h3{
         }
 
         @media only screen and (max-width:425px) { 
+            .mensaje-temporal {
+                height: 6vw;
+            }
+
             .titulo-home {
                 font-size: 1.5rem;
+                margin-top: 6vw;
+                margin-bottom: 5vw;
             }
     
             .seccion-1-container {
@@ -869,11 +878,21 @@ h3{
             }
 
             .txt-home {
+                font-size: 1.1rem;
+            }
+
+            .reviews-titulo {
+                font-size: 1.5rem;
+                margin-top: 6vw;
+                margin-bottom: 5vw;
+            }
+
+            .cliente-titulo {
                 font-size: 1rem;
             }
 
             .review-texto {
-                font-size: 6vw;
+                font-size: 1.1rem;
             }
         }
     /*Fin Queries index*/
@@ -897,7 +916,23 @@ h3{
             }
         }
 
+        @media screen and (max-width:1024px) {
+            #circle {
+                width: 9vw;
+                height: 9vw;
+                line-height: 11vw;
+                font-size: 4vw;
+            }
+        }
+
         @media screen and (max-width:768px) {
+            #circle {
+                width: 11vw;
+                height: 11vw;
+                line-height: 13.3vw;
+                font-size: 5vw;
+            }
+
             .productos-grid-container {
                 display: flex;
                 flex-direction: column;
@@ -933,13 +968,20 @@ h3{
                 margin: 1rem 1rem 1.5rem 1rem;
             }
 
+            #circle {
+                width: 17vw;
+                height: 17vw;
+                line-height: 20vw;
+                font-size: 9vw;
+            }
+
             .titulo-producto {
                 font-size: 1.5rem;
                 margin-bottom: .5rem;
             }
     
             .descripcion-productos {
-                font-size: 1rem;
+                font-size: 1.1rem;
                 margin-top: .5rem;
             }
 
@@ -1034,6 +1076,8 @@ h3{
             .faq-grupo {
                 width: 100%;
                 row-gap: .9rem;
+                margin-left: 0rem;
+                margin-right: 0rem;
             }
 
             .faq-titulo {
@@ -1042,11 +1086,12 @@ h3{
             }
 
             .question {
-                font-size: 1.3rem;
+                font-size: 1.1rem;
+                margin-top: 3.5vw;
             }
 
             .answer {
-                font-size: 1rem;
+                font-size: 1.1rem;
             }
         }
     /*Fin Queries Soporte*/
@@ -1088,7 +1133,7 @@ h3{
             }
 
             .nosotros-texto {
-                font-size: 1rem;
+                font-size: 1.1rem;
             }
         }
     /*Fin Queries nosotros*/
@@ -1159,7 +1204,7 @@ h3{
         }
 
         .parrafo-contacto {
-            font-size: 1rem;
+            font-size: 1.1rem;
         }
 
         .info-redes {
@@ -1233,11 +1278,11 @@ h3{
         }
 
         .nosotros-container {
-            margin: 0 1rem 1rem 1rem;
+            margin: 0 0rem 1rem 0rem;
         }
     
         .nosotros-texto {
-            font-size: 1rem;
+            font-size: 1.1rem;
         }
     }
     /*Fin Queries condiciones*/
