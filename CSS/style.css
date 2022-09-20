@@ -252,7 +252,9 @@ h3 {
   height: 8vw;
   background-color: #788AAA;
   text-align: center;
-  line-height: 10.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 4.5vw;
   font-weight: bold;
 }
@@ -883,7 +885,6 @@ h3 {
   #circle {
     width: 9vw;
     height: 9vw;
-    line-height: 11vw;
     font-size: 4vw;
   }
 }
@@ -891,7 +892,6 @@ h3 {
   #circle {
     width: 11vw;
     height: 11vw;
-    line-height: 13.3vw;
     font-size: 5vw;
   }
   .productos-grid-container {
@@ -926,8 +926,7 @@ h3 {
   #circle {
     width: 17vw;
     height: 17vw;
-    line-height: 20vw;
-    font-size: 9vw;
+    font-size: 10vw;
   }
   .titulo-producto {
     font-size: 1.5rem;
